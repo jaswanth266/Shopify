@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #185FA5;
+}
+
+@layer base {
+  body {
+    @apply text-gray-900;
+  }
+}
+
+/* Custom scrollbar for tabs and filters */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
